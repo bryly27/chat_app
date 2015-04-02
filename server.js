@@ -12,9 +12,9 @@ app.get('/', function(req, res){
 	res.render('index');
 })
 
-var server = app.listen(8000);
-var server = app.listen(server);
-var io = require('socket.io').listen(server);
+var server = app.listen(3000);
+var ser = app.listen(server);
+var io = require('socket.io').listen(ser);
 io.sockets.on('connection', function(socket){
 
 	console.log('using socket');
