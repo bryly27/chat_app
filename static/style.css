@@ -46,6 +46,7 @@ body {
 
 #message_form {
 	text-align: center;
+	position: fixed;
 }
 
 #message {
