@@ -14,7 +14,9 @@ $(document).ready(function(){
 	
 	socket.on('show_chatbox', function(data){
 		$('#chatbox').fadeIn();
+		$('body').scrollTop(10000);
 	});
+
 
 	socket.on('update_chatbox', function(data){
 		console.log(data);
