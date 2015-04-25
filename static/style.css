@@ -59,12 +59,14 @@ body {
 
 .new_user {
 	color: grey;	
-	height: 20px; 
+	/*height: 20px; */
+	font-size: 26px;
 }
 
 .user {
 	color: grey;
-	height: 20px;
+	/*height: 20px;*/
+	font-size: 26px;
 }
 	.user span {
 		background-color: #8bb3ef;
@@ -74,7 +76,8 @@ body {
 
 .other_user {
 	color: grey;
-	height: 20px;
+	/*height: 20px;*/
+	font-size: 26px;
 }
 	.other_user span {
 		background-color: #84e26a;
@@ -87,7 +90,7 @@ body {
 }
 
 .user_name {
-	font-size: 10px;
+	font-size: 26px;
 }
 
 .disconnecting {
