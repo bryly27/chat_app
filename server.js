@@ -41,18 +41,22 @@ function chatting(){
 		chatbox.push({disconnecting: name + ' has disconnected'});
 		io.emit('update_chatbox', chatbox);
 
-		var temp = 0;
-		for(var i=0; i<users.length; i++){
-			if(users[i] == name){
-				temp = users[i];
-				users[i] = users[users.length-1];
-				users[users.length-1] = temp;
+		// var temp = 0;
+		// for(var i=0; i<users.length; i++){
+		// 	if(users[i] == name){
+		// 		temp = users[i];
+		// 		users[i] = users[users.length-1];
+		// 		users[users.length-1] = temp;
 				users.pop();
-				if(users.length == 0){
-					chatbox = [];
-				}
-			}
+		// 		if(users.length == 0){
+		// 			chatbox = [];
+		// 		}
+		// 	}
+		// }
+		if(users.length === 0){
+			chatbox = [];
 		}
+
 	});
 
  }
