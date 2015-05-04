@@ -19,7 +19,6 @@ $(document).ready(function(){
 
 
 	socket.on('update_chatbox', function(data){
-		console.log(data);
 		$('#chat').html('');
 		for(var i=0; i<data.length; i++){
 			if(data[i].new_user){
@@ -37,7 +36,6 @@ $(document).ready(function(){
 
 	$('#submit').click(function(){
 		event.preventDefault();
-		console.log($('#message').val().length);
 		if($('#message').val().length >= 1){
 			socket.emit('add_message', {name: name, message: $('#message').val()});
 			$('form')[0].reset();
